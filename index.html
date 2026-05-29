@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroForte - Gestão de Seca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>Equilíbrio entre produção e meio ambiente</p>
+    </header>
+
+    <main class="container">
+        <section class="Painel-simulador">
+            <h2>Simulador de Impacto Hídrico</h2>
+            <p>Selecione o mês atual para avaliar o risco de estiagem na sua região:</p>
+            
+            <div class="form-group">
+                <label for="mes">Mês de Análise:</label>
+                <select id="mes">
+                    <option value="janeiro">Janeiro (Verão/Chuvoso)</option>
+                    <option value="junho">Junho (Inverno/Seco)</option>
+                    <option value="setembro">Setembro (Transição Crítica)</option>
+                </select>
+            </div>
+            
+            <button id="btn-analisar">Analisar Cenário</button>
+        </section>
+
+        <section id="resultado" class="hidden">
+            <div class="card-alerta">
+                <h3>Status do Período: <span id="status-nivel">-</span></h3>
+                <p id="status-descricao"></p>
+            </div>
+            
+            <div class="recomendacoes">
+                <h3>Ação Sustentável Recomendada:</h3>
+                <ul id="lista-acoes"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AgroForte Tech - Tecnologia a serviço da terra.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
